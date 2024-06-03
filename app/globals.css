@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.padding {
+  @apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 p-5
+}
+.container__padding {
+  @apply px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 2xl:px-28
+}
+
+.content-start-col {
+
+  @apply flex flex-col justify-start items-start
+}
+
+.content-center {
+  @apply flex justify-center items-center
+}
