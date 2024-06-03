@@ -6,7 +6,7 @@ import { heroBG } from '@/public/images'
 const Hero = () => {
   return (
     <div className='w-full container__padding flex justify-between items-center 
-    max-lg:flex-wrap gap-4'>
+    max-lg:flex-wrap gap-4 mt-28'>
 
       {/*Left Side */}
         <div className='flex flex-col justify-start items-start gap-6 max-lg:mt-16'>

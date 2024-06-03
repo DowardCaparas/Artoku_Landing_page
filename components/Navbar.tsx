@@ -38,9 +38,10 @@ const Navbar = () => {
   };
 
   return (
-    <header className='w-full padding border-gray-200'>
+    <header className='w-full padding bg-gray-100 fixed top-0 z-10 border-b border-gray-400'>
         <nav className='flex justify-between items-center'>
-           <h3 className='text-2xl'>Artoku</h3>
+          <Link href='#'><h3 className='text-2xl'>Artoku</h3></Link>
+           
            <div className='max-md:hidden flex justify-center items-center'>
 
                 {navLinks.map((link, index) => (
