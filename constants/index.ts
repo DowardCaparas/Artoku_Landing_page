@@ -1,5 +1,6 @@
 import { message, wallet, pie, question } from "@/public";
 import { mentor, mentor1, mentor2, mentor3, mentor4, building, management } from "@/public/images";
+import { Mentor } from "@/types";
 
 export const navLinks = [
     {url: '#', label: 'For Clients'},
@@ -80,7 +81,7 @@ export const advantages = [
     },
 ];
 
-export const mentors = [
+export const mentors: Mentor[] = [
     {
         name: 'Caparas Doward B.',
         position: 'CMO Manager',
@@ -89,6 +90,7 @@ export const mentors = [
         reviews: 19,
         experience: '10 years',
         attendance: '100%',
+        image: mentor1.src,
     },
 
     {
@@ -99,6 +101,7 @@ export const mentors = [
         reviews: 18,
         experience: '5 years',
         attendance: '98%',
+        image: mentor2.src,
     },
 
     {
@@ -109,6 +112,7 @@ export const mentors = [
         reviews: 65,
         experience: '8 years',
         attendance: '90%',
+        image: mentor3.src,
     },
 
     {
@@ -119,14 +123,8 @@ export const mentors = [
         reviews: 19,
         experience: '17 years',
         attendance: '100%',
+        image: mentor4.src,
     },
-];
-
-export const mentorImg = [
-    {image: mentor1},
-    {image: mentor2},
-    {image: mentor3},
-    {image: mentor4},
 ];
 
 export const artoku = [

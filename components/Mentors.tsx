@@ -1,9 +1,9 @@
-import { mentors } from "@/constants";
 import MentorCard from "./MentorCard";
+
 
 const Mentors = () => {
   return (
-    <div className="container__padding py-14 flex max-lg:flex-wrap justify-between items-center">
+    <div className="container__padding py-14">
       <div className="flex flex-col justify-start items-start gap-4 md:w-2/3">
         <p className=" uppercase text-primary_purple font-semibold text-[12px]">
           Artoku&apos;s Advantages
@@ -19,7 +19,8 @@ const Mentors = () => {
         </p>
       </div>
 
-        <MentorCard mentor={mentors} />
+      <MentorCard />
+       
     </div>
   );
 };

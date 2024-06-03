@@ -5,7 +5,7 @@ export interface CustomButtonProps {
 }
 
 // Define an interface for a mentor
-export interface MentorCardProps {
+export interface Mentor {
     name: string;
     position: string;
     location: string;
@@ -13,6 +13,7 @@ export interface MentorCardProps {
     reviews: number;
     experience: string;
     attendance: string;
+    image: string
 }
 
 export interface ButtonIconProps {
