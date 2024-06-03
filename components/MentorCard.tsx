@@ -6,15 +6,11 @@ import { useState } from "react";
 import ButtonIcon from "./ButtonIcon";
 import { mentors, mentorImg } from "@/constants";
 
-const MentorCard = ({
-  name,
-  position,
-  location,
-  sessions,
-  reviews,
-  experience,
-  attendance,
-}: MentorCardProps) => {
+interface MentorProps {
+  mentor: MentorCardProps[]
+}
+
+const MentorCard = ({ mentor }: MentorProps) => {
   {
     /*Image Slider */
   }
@@ -69,16 +65,15 @@ const MentorCard = ({
       <div className="bg-slate-50">
         <div className="bg-gray-200 content-center rounded-tl-lg rounded-tr-lg">
           {mentorImg.map((item, index) => (
-              <Image
-                key={index}
-                src={item.image}
-                alt={name}
-                height={400}
-                width={400}
-                className="object-contain"
+            <Image
+              key={index}
+              src={item.image}
+              alt='mentor image'
+              height={400}
+              width={400}
+              className="object-contain"
             />
           ))}
-          
         </div>
 
         {/*Details */}
@@ -86,7 +81,7 @@ const MentorCard = ({
         <div className="p-5 gap-4 flex flex-col">
           <div className="flex justify-between items-center">
             <h3 className="md:text-lg text-[14px] font-medium text-primary_black">
-              {name}
+              {mentor[imageIndex].name}
             </h3>
 
             <ButtonIcon
@@ -100,12 +95,12 @@ const MentorCard = ({
 
           {open && (
             <div className="transition duration-300 ease-in-out">
-              <p>{position}</p>
-              <p>{location}</p>
+              <p>{mentor[imageIndex].position}</p>
+              <p>{mentor[imageIndex].location}</p>
 
               <div className="flex items-center justify-start gap-2">
-                <p>{sessions} sessions</p>
-                <p className="text-sm text-slate-700">({reviews} reviews)</p>
+                <p>{mentor[imageIndex].sessions} sessions</p>
+                <p className="text-sm text-slate-700">({mentor[imageIndex].reviews} reviews)</p>
               </div>
 
               <div className="w-full border-primary_black border-b-2 py-2"></div>
@@ -113,12 +108,12 @@ const MentorCard = ({
               <div className="p-5 flex justify-between items-start">
                 <div className="content-start-col">
                   <p className="text-slate-700">Experience</p>
-                  <p className="font-bold">{experience} years</p>
+                  <p className="font-bold">{mentor[imageIndex].experience} years</p>
                 </div>
 
                 <div className="content-start-col">
                   <p className="text-slate-700">Avg. Attendance</p>
-                  <p className="font-bold">{attendance}</p>
+                  <p className="font-bold">{mentor[imageIndex].attendance}</p>
                 </div>
               </div>
             </div>

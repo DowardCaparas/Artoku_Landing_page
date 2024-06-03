@@ -19,18 +19,7 @@ const Mentors = () => {
         </p>
       </div>
 
-      {mentors.map((item, index) => (
-        <MentorCard
-          key={index}
-          name={item.name}
-          position={item.position}
-          location={item.location}
-          sessions={item.sessions}
-          reviews={item.reviews}
-          experience={item.experience}
-          attendance={item.attendance}
-        />
-      ))}
+        <MentorCard mentor={mentors} />
     </div>
   );
 };
