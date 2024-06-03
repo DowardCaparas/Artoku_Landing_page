@@ -27,7 +27,7 @@ const Hero = () => {
       {/*Right Side */}
       <div className='md:w-full flex justify-end items-end w-2/2 ml-20 sm:ml-48'>
           <Image 
-                src='/images/heroBG.png' 
+                src='/dist/images/heroBG.png' 
                 alt='hero image' 
                 height={300}
                 width={400}
