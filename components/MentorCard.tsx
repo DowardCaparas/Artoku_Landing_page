@@ -18,16 +18,27 @@ const MentorCard = ({ mentor }: MentorProps) => {
 
   const showNextMentor = () => {
     setiImageIndex((index) => {
-      if (index === 0) return mentors.length - 1 && mentorImg.length - 1;
+      if (index === 0) return mentors.length - 1 ;
+      return index - 1;
+    });
+
+    setiImageIndex((index) => {
+      if (index === 0) return mentorImg.length - 1 ;
       return index - 1;
     });
   };
 
   const showPrevMentor = () => {
     setiImageIndex((index) => {
-      if (index === mentors.length - 1 && index === mentorImg.length - 1) return 0;
+      if (index === mentors.length - 1) return 0;
       return index + 1;
     });
+
+    setiImageIndex((index) => {
+      if (index === mentorImg.length - 1) return 0;
+      return index + 1;
+    });
+
   };
 
   {/*End of Image Slider */}
