@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import ButtonIcon from "./ButtonIcon";
 import { mentors, mentorImg } from "@/constants";
+import { chevrondown, chevronup, chevronleft, chevronright } from "@/public";
 
 interface MentorProps {
   mentor: MentorCardProps[];
@@ -22,20 +23,11 @@ const MentorCard = ({ mentor }: MentorProps) => {
       return index - 1;
     });
 
-    setiImageIndex((index) => {
-      if (index === 0) return mentorImg.length - 1 ;
-      return index - 1;
-    });
   };
 
   const showPrevMentor = () => {
     setiImageIndex((index) => {
       if (index === mentors.length - 1) return 0;
-      return index + 1;
-    });
-
-    setiImageIndex((index) => {
-      if (index === mentorImg.length - 1) return 0;
       return index + 1;
     });
 
@@ -62,12 +54,12 @@ const MentorCard = ({ mentor }: MentorProps) => {
         <ButtonIcon
           title="Previous"
           handleClick={showPrevMentor}
-          iconURL="/chevronleft.svg"
+          iconURL={chevronleft}
         />
         <ButtonIcon
           title="Next"
           handleClick={showNextMentor}
-          iconURL="/chevronright.svg"
+          iconURL={chevronright}
         />
       </div>
 
@@ -92,7 +84,7 @@ const MentorCard = ({ mentor }: MentorProps) => {
 
             <ButtonIcon
               title={`${open ? "Hide Details" : "View Details"}`}
-              iconURL={`${open ? "/chevronup.svg" : "/chevrondown.svg"}`}
+              iconURL={`${open ? {chevronup} : {chevrondown}}`}
               handleClick={showDetails}
             />
           </div>
