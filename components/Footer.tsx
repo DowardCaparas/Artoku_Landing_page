@@ -1,6 +1,7 @@
 import { footerLinks } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
+import { twitter, linkedin } from "@/public"
 
 const Footer = () => {
   return (
@@ -10,14 +11,14 @@ const Footer = () => {
             <h3 className='text-2xl'>Artoku</h3>
             <div className="flex justify-center items-center gap-4">
             <Image 
-                src='/twitter.svg' 
+                src={twitter}
                 alt='twitter' 
                 width={30} 
                 height={30} 
                 className='object-contain' 
             />
              <Image 
-                src='/linkedin.svg' 
+                src={linkedin}
                 alt='linkedin' 
                 width={30} 
                 height={30} 
