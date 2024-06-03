@@ -4,6 +4,7 @@ export interface CustomButtonProps {
     textStyles?: string;
 }
 
+// Define an interface for a mentor
 export interface MentorCardProps {
     name: string;
     position: string;
@@ -12,7 +13,7 @@ export interface MentorCardProps {
     reviews: number;
     experience: string;
     attendance: string;
-    profilePic: string;
+    profilePic: string; // Adjust this type based on your setup
 }
 
 export interface ButtonIconProps {

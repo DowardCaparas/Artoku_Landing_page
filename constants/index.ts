@@ -1,5 +1,5 @@
 import { message, wallet, pie, question } from "@/public";
-import { mentor, mentor1, mentor2, mentor3, mentor4, building, management } from "@/public/images";
+import { mentor, building, management } from "@/public/images";
 
 export const navLinks = [
     {url: '#', label: 'For Clients'},
@@ -89,7 +89,7 @@ export const mentors = [
         reviews: 19,
         experience: '10 years',
         attendance: '100%',
-        profilePic: mentor1,
+        profilePic: '/images/mentor1.png',
     },
 
     {
@@ -100,7 +100,7 @@ export const mentors = [
         reviews: 18,
         experience: '5 years',
         attendance: '98%',
-        profilePic: mentor2,
+        profilePic: '/images/mentor2.png',
     },
 
     {
@@ -111,7 +111,7 @@ export const mentors = [
         reviews: 65,
         experience: '8 years',
         attendance: '90%',
-        profilePic: mentor3,
+        profilePic: '/images/mentor3.png',
     },
 
     {
@@ -122,7 +122,7 @@ export const mentors = [
         reviews: 19,
         experience: '17 years',
         attendance: '100%',
-        profilePic: mentor4,
+        profilePic: '/images/mentor4.png',
     },
 ];
 
