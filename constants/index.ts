@@ -1,5 +1,5 @@
 import { message, wallet, pie, question } from "@/public";
-import { mentor, mentor1, mentor2, mentor3, mentor4, building, management } from "@/public/images";
+import { mentor1, mentor2, mentor3, mentor4 } from "@/public/images";
 import { Mentor } from "@/types";
 
 export const navLinks = [
@@ -124,17 +124,5 @@ export const mentors: Mentor[] = [
         experience: '17 years',
         attendance: '100%',
         image: mentor4.src,
-    },
-];
-
-export const artoku = [
-    {
-        photo: building
-    },
-    {
-        photo: management
-    },
-    {
-        photo: mentor
     },
 ];
