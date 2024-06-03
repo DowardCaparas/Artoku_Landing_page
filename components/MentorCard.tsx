@@ -64,16 +64,13 @@ const MentorCard = ({ mentor }: MentorProps) => {
 
       <div className="bg-slate-50">
         <div className="bg-gray-200 content-center rounded-tl-lg rounded-tr-lg">
-          {mentorImg.map((item, index) => (
             <Image
-              key={index}
-              src={item.image}
+              src={mentorImg[imageIndex].image}
               alt='mentor image'
               height={400}
               width={400}
               className="object-contain"
             />
-          ))}
         </div>
 
         {/*Details */}
