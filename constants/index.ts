@@ -3,11 +3,11 @@ import { mentor1, mentor2, mentor3, mentor4 } from "@/public/images";
 import { Mentor } from "@/types";
 
 export const navLinks = [
-    {url: '#', label: 'For Clients'},
-    {url: '#', label: 'For Advisors'},
-    {url: '#', label: 'Dashboard'},
-    {url: '#', label: 'Resources'},
-    {url: '#', label: 'Company'},
+    {url: '#benefits', label: 'Benefits'},
+    {url: '#advantages', label: 'Advantages'},
+    {url: '#mentors', label: 'Mentors'},
+    {url: '#resources', label: 'Resources'},
+    {url: '#customers', label: 'For Customers'},
 
 ];
 

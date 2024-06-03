@@ -4,7 +4,7 @@ import { advantage, atm, } from "@/public/images"
 
 const Advantages = () => {
   return (
-    <div className='w-full container__padding py-32 gap-14 flex flex-col'>
+    <div id='advantages' className='w-full container__padding py-32 gap-14 flex flex-col'>
       {/*Top */}
         <div className='flex flex-col justify-center items-center gap-4'>
 

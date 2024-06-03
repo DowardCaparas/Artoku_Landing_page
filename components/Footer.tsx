@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-   <footer className=' w-full container__padding mt-20'>
+   <footer id='resources' className=' w-full container__padding mt-20'>
     {/*First section */}
         <div className='flex justify-between item-center'>
             <h3 className='text-2xl'>Artoku</h3>

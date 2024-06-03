@@ -3,7 +3,7 @@ import MentorCard from "./MentorCard";
 
 const Mentors = () => {
   return (
-    <div className="container__padding py-28 flex flex-col gap-10">
+    <div id='mentors' className="container__padding py-28 flex flex-col gap-10">
       <div className="flex flex-col justify-start items-start gap-4 md:w-2/3">
         <p className=" uppercase text-primary_purple font-semibold text-[12px]">
           Artoku&apos;s Advantages

@@ -5,7 +5,7 @@ import { check } from '@/public'
 
 const MentoringProgram = () => {
   return (
-    <div className='container__padding w-full gap-y-28 py-10 flex flex-col max-lg:mt-20'>
+    <div id='benefits' className='container__padding w-full gap-y-28 py-10 flex flex-col max-lg:mt-20'>
 
     {/*First section */} 
         <div className='grid lg:grid-cols-4 grid-flow-row gap-4 grid-cols-2'>

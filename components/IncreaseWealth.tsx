@@ -4,7 +4,7 @@ import { mentor, building, management } from "@/public/images";
 
 const IncreaseWealth = () => {
   return (
-    <div className="w-full container__padding py-16">
+    <div id='customers' className="w-full container__padding py-16">
       <div className="bg-primary_black py-8 px-12 flex max-lg:flex-wrap justify-between items-center gap-10">
         {/*Left Side */}
         <div className="flex flex-col justify-start items-start gap-7  w-96">
