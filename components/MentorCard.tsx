@@ -7,7 +7,7 @@ import ButtonIcon from "./ButtonIcon";
 import { mentors, mentorImg } from "@/constants";
 
 interface MentorProps {
-  mentor: MentorCardProps[]
+  mentor: MentorCardProps[];
 }
 
 const MentorCard = ({ mentor }: MentorProps) => {
@@ -18,21 +18,19 @@ const MentorCard = ({ mentor }: MentorProps) => {
 
   const showNextMentor = () => {
     setiImageIndex((index) => {
-      if (index === 0) return mentors.length - 1;
+      if (index === 0) return mentors.length - 1 && mentorImg.length - 1;
       return index - 1;
     });
   };
 
   const showPrevMentor = () => {
     setiImageIndex((index) => {
-      if (index === mentors.length - 1) return 0;
+      if (index === mentors.length - 1 && index === mentorImg.length - 1) return 0;
       return index + 1;
     });
   };
 
-  {
-    /*End of Image Slider */
-  }
+  {/*End of Image Slider */}
 
   {
     /*View Details */
@@ -64,13 +62,13 @@ const MentorCard = ({ mentor }: MentorProps) => {
 
       <div className="bg-slate-50">
         <div className="bg-gray-200 content-center rounded-tl-lg rounded-tr-lg">
-            <Image
-              src={mentorImg[imageIndex].image}
-              alt='mentor image'
-              height={400}
-              width={400}
-              className="object-contain"
-            />
+          <Image
+            src={mentorImg[imageIndex].image}
+            alt="mentor image"
+            height={400}
+            width={400}
+            className="object-contain"
+          />
         </div>
 
         {/*Details */}
@@ -97,7 +95,9 @@ const MentorCard = ({ mentor }: MentorProps) => {
 
               <div className="flex items-center justify-start gap-2">
                 <p>{mentor[imageIndex].sessions} sessions</p>
-                <p className="text-sm text-slate-700">({mentor[imageIndex].reviews} reviews)</p>
+                <p className="text-sm text-slate-700">
+                  ({mentor[imageIndex].reviews} reviews)
+                </p>
               </div>
 
               <div className="w-full border-primary_black border-b-2 py-2"></div>
@@ -105,7 +105,9 @@ const MentorCard = ({ mentor }: MentorProps) => {
               <div className="p-5 flex justify-between items-start">
                 <div className="content-start-col">
                   <p className="text-slate-700">Experience</p>
-                  <p className="font-bold">{mentor[imageIndex].experience} years</p>
+                  <p className="font-bold">
+                    {mentor[imageIndex].experience} years
+                  </p>
                 </div>
 
                 <div className="content-start-col">
