@@ -98,6 +98,7 @@ const Navbar = () => {
                   <div key={index} className='flex flex-col'>
                        <Link  
                           href={link.url}
+                          onClick={() => setOpen(prev => !prev)}
                           className='text-primary_black py-2 hover:text-slate-600 active:text-slate-400'
                        >
                          {link.label}
