@@ -50,12 +50,12 @@ export const counts = [
 ];
 
 export const mentorBenefits = [
-    {label: '0.1%*-0.5% management fees on managed investing accounts', imgIcon: '/check.svg'},
-    {label: '8% interest on your Cash account', imgIcon: '/check.svg'},
-    {label: 'Live webinars every month', imgIcon: '/check.svg'},
-    {label: 'Exclusive WhatsApp Group', imgIcon: '/check.svg'},
-    {label: 'Regular meetings every month', imgIcon: '/check.svg'},
-    {label: 'Dedicated team of advisors', imgIcon: '/check.svg'},
+    {label: '0.1%*-0.5% management fees on managed investing accounts'},
+    {label: '8% interest on your Cash account'},
+    {label: 'Live webinars every month'},
+    {label: 'Exclusive WhatsApp Group'},
+    {label: 'Regular meetings every month'},
+    {label: 'Dedicated team of advisors'},
 ];
 
 export const advantages = [

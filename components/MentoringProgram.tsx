@@ -1,6 +1,7 @@
 import { counts, mentorBenefits } from '@/constants'
 import Image from 'next/image'
 import CustomButton from './CustomButton'
+import { check } from '@/public'
 
 const MentoringProgram = () => {
   return (
@@ -59,7 +60,7 @@ const MentoringProgram = () => {
 
                 {mentorBenefits.map((item, index) => (
                     <div key={index} className='flex jus items-start gap-2'>
-                        <Image src={item.imgIcon} 
+                        <Image src= {check} 
                             alt='check' 
                             height={20} 
                             width={20} 
