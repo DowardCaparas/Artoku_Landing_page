@@ -1,6 +1,7 @@
 
 import CustomButton from './CustomButton'
 import Image from 'next/image'
+import { heroBG } from '@/public/images'
 
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
       {/*Right Side */}
       <div className='md:w-full flex justify-end items-end w-2/2 ml-20 sm:ml-48'>
           <Image 
-                src='/dist/images/heroBG.png' 
+                src={heroBG} 
                 alt='hero image' 
                 height={300}
                 width={400}

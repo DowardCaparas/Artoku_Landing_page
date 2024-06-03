@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { founder } from "@/public/images"
 
 const Founder = () => {
   return (
@@ -16,7 +17,7 @@ const Founder = () => {
             <div className='flex justify-end items-center gap-4 w-full'>
                 
                     <Image 
-                        src='/images/founder.png' 
+                        src={founder} 
                         alt='founder' 
                         width={80} 
                         height={80} 

@@ -1,5 +1,6 @@
 import { advantages } from "@/constants"
 import Image from "next/image"
+import { advantage, atm, } from "@/public/images"
 
 const Advantages = () => {
   return (
@@ -26,7 +27,7 @@ const Advantages = () => {
             <div className="relative flex justify-center items-end w-full">
 
                       <Image 
-                        src='/images/advantage.png' 
+                        src={advantage}
                         alt='management'
                         height={600}
                         width={450}
@@ -49,7 +50,7 @@ const Advantages = () => {
                             
                           <div className="flex justify-end items-end">
                                 <Image 
-                                  src='/images/atm.png' 
+                                  src={atm}
                                   alt="atm"
                                   width={160}
                                   height={160}

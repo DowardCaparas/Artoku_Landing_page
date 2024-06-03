@@ -1,3 +1,6 @@
+import { message, wallet, pie, question } from "@/public";
+import { mentor, mentor1, mentor2, mentor3, mentor4, building, management } from "@/public/images";
+
 export const navLinks = [
     {url: '#', label: 'For Clients'},
     {url: '#', label: 'For Advisors'},
@@ -60,20 +63,20 @@ export const mentorBenefits = [
 
 export const advantages = [
     {label: '1:1 private consultation with manager.', 
-     iconURL: '/message.svg',
+     iconURL: message,
      paragraph: 'We have lots of professionals in the field who are ready to help you develop. Make sure your wealth investment continues to develop and grow.'
     },
 
     {label: 'Manage your finances with the pocket feature, making it suit your needs.', 
-     iconURL: '/wallet.svg'
+     iconURL: wallet
     },
     
     {label: 'Monitor all investments and analyze with AI.', 
-     iconURL: '/pie.svg'
+     iconURL: pie
     },
 
     {label: 'Automations that support your customer service.', 
-     iconURL: '/question.svg'
+     iconURL: question
     },
 ];
 
@@ -86,7 +89,7 @@ export const mentors = [
         reviews: 19,
         experience: '10 years',
         attendance: '100%',
-        profilePic: '/images/mentor1.png',
+        profilePic: mentor1,
     },
 
     {
@@ -97,7 +100,7 @@ export const mentors = [
         reviews: 18,
         experience: '5 years',
         attendance: '98%',
-        profilePic: '/images/mentor2.png',
+        profilePic: mentor2,
     },
 
     {
@@ -108,7 +111,7 @@ export const mentors = [
         reviews: 65,
         experience: '8 years',
         attendance: '90%',
-        profilePic: '/images/mentor3.png',
+        profilePic: mentor3,
     },
 
     {
@@ -119,18 +122,18 @@ export const mentors = [
         reviews: 19,
         experience: '17 years',
         attendance: '100%',
-        profilePic: '/images/mentor4.png',
+        profilePic: mentor4,
     },
 ];
 
 export const artoku = [
     {
-        photo: '/images/building.png'
+        photo: building
     },
     {
-        photo: '/images/management.png'
+        photo: management
     },
     {
-        photo: '/images/mentor.png'
+        photo: mentor
     },
 ];
