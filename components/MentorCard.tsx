@@ -11,9 +11,8 @@ const MentorCard = () => {
     <div>
       <div className="grid grid-cols-3 grid-flow-row gap-4">
         {filteredDetails.map((item, index) => (
-          <div className="bg-slate-100 border-2 rounded-tl-lg rounded-tr-lg grid">
+          <div key={index} className="bg-slate-100 border-2 rounded-tl-lg rounded-tr-lg grid">
             <Image
-              key={index}
               src={item.image}
               alt="mentor"
               height={100}
