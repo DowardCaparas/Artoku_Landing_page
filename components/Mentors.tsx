@@ -29,7 +29,6 @@ const Mentors = () => {
           reviews={item.reviews}
           experience={item.experience}
           attendance={item.attendance}
-          profilePic={item.profilePic}
         />
       ))}
     </div>

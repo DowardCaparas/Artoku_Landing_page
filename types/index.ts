@@ -13,7 +13,6 @@ export interface MentorCardProps {
     reviews: number;
     experience: string;
     attendance: string;
-    profilePic: string; // Adjust this type based on your setup
 }
 
 export interface ButtonIconProps {

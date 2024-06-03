@@ -4,7 +4,7 @@ import { MentorCardProps } from "@/types";
 import Image from "next/image";
 import { useState } from "react";
 import ButtonIcon from "./ButtonIcon";
-import { mentors } from "@/constants";
+import { mentors, mentorImg } from "@/constants";
 
 const MentorCard = ({
   name,
@@ -14,7 +14,6 @@ const MentorCard = ({
   reviews,
   experience,
   attendance,
-  profilePic,
 }: MentorCardProps) => {
   {
     /*Image Slider */
@@ -69,13 +68,17 @@ const MentorCard = ({
 
       <div className="bg-slate-50">
         <div className="bg-gray-200 content-center rounded-tl-lg rounded-tr-lg">
-          <Image
-            src={profilePic}
-            alt={name}
-            height={400}
-            width={400}
-            className="object-contain"
-          />
+          {mentorImg.map((item, index) => (
+              <Image
+                key={index}
+                src={item.image}
+                alt={name}
+                height={400}
+                width={400}
+                className="object-contain"
+            />
+          ))}
+          
         </div>
 
         {/*Details */}
