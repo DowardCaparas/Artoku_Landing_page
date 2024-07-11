@@ -1,6 +1,5 @@
 import { message, wallet, pie, question } from "@/public";
 import { mentor1, mentor2, mentor3, mentor4 } from "@/public/images";
-import { Mentor } from "@/types";
 
 export const navLinks = [
     {url: '#benefits', label: 'Benefits'},
@@ -81,15 +80,15 @@ export const advantages = [
     },
 ];
 
-export const mentors: Mentor[] = [
+export const mentors = [
     {
         name: 'Caparas Doward B.',
         position: 'CMO Manager',
         location: 'Naic Cavite',
-        sessions: 50,
-        reviews: 19,
-        experience: '10 years',
-        attendance: '100%',
+        sessions: '50 sessions',
+        reviews: '19 reviews',
+        experience: '10 years of experience',
+        attendance: '100% Attendance',
         image: mentor1.src,
     },
 
@@ -97,10 +96,10 @@ export const mentors: Mentor[] = [
         name: 'Edisson Moraes Jr.',
         position: 'Financial Planning',
         location: 'Unico Jaba Beka',
-        sessions: 25,
-        reviews: 18,
-        experience: '5 years',
-        attendance: '98%',
+        sessions: '25 sessions',
+        reviews: '18 reviews',
+        experience: '5 years of experience',
+        attendance: '98% Attendance',
         image: mentor2.src,
     },
 
@@ -108,10 +107,10 @@ export const mentors: Mentor[] = [
         name: 'Zlatan Michael G.',
         position: 'Financial Planning',
         location: 'ID-tech',
-        sessions: 78,
-        reviews: 65,
-        experience: '8 years',
-        attendance: '90%',
+        sessions: '78 sessions',
+        reviews: '65 reviews',
+        experience: '8 years of experience',
+        attendance: '90% Attendance',
         image: mentor3.src,
     },
 
@@ -119,10 +118,10 @@ export const mentors: Mentor[] = [
         name: 'Marcos Paulo',
         position: 'CMO Manager',
         location: 'Bala-bala',
-        sessions: 50,
-        reviews: 19,
-        experience: '17 years',
-        attendance: '100%',
+        sessions: '50 sessions',
+        reviews: '19 reviews',
+        experience: '17 years of experience',
+        attendance: '100% Attendance',
         image: mentor4.src,
     },
 ];
